@@ -10,7 +10,7 @@ class UserModel {
   final String phoneNumber;
   final String profilePicture;
 
-  // Constructor
+  /// Constructor
   UserModel({
     required this.id,
     required this.firstName,
@@ -21,13 +21,26 @@ class UserModel {
     required this.profilePicture,
   });
 
-  // Get full name
+  /// Helper function to get the full name
   String get fullName => '$firstName $lastName';
 
-  // Get formatted phone number (if you have a formatter)
+  /// Helper function to format phone number
   String get formattedPhoneNo => SafeSafaiFormatter.formatPhoneNumber(phoneNumber);
 
-  /// Static function to create an empty user model.
+  /// Static function to split full name into parts
+  static List<String> nameParts(String fullName) => fullName.split(" ");
+
+  /// Static function to generate a username from the full name
+  static String generateUsername(String fullName) {
+    List<String> nameParts = fullName.split(" ");
+    String firstName = nameParts[0].toLowerCase();
+    String lastName = nameParts.length > 1 ? nameParts[1].toLowerCase() : "";
+    String camelCaseUsername = "$firstName$lastName"; // Combine first and last name
+    String usernameWithPrefix = "cwt_$camelCaseUsername"; // Add "cwt_" prefix
+    return usernameWithPrefix;
+  }
+
+  /// Static function to create an empty user model
   static UserModel empty() => UserModel(
     id: '',
     firstName: '',
@@ -38,7 +51,7 @@ class UserModel {
     profilePicture: '',
   );
 
-  /// Convert model to JSON structure for storing data in Firebase.
+  // Convert model to JSON structure for storing data in Firebase
   Map<String, dynamic> toJson() {
     return {
       'FirstName': firstName,
@@ -50,7 +63,7 @@ class UserModel {
     };
   }
 
-  /// Factory method to create a UserModel from a Firebase document snapshot.
+  // Factory method to create a UserModel from a Firebase document snapshot
   factory UserModel.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> document) {
     final data = document.data();
     if (data != null) {
@@ -66,14 +79,5 @@ class UserModel {
     } else {
       return UserModel.empty();
     }
-  }
-
-  /// Static function to generate a username from the full name.
-  static String generateUsername(String fullName) {
-    List<String> nameParts = fullName.split(" ");
-    String firstName = nameParts[0].toLowerCase();
-    String lastName = nameParts.length > 1 ? nameParts[1].toLowerCase() : "";
-    String camelCaseUsername = "$firstName$lastName";
-    return "cwt_$camelCaseUsername"; // Add your custom prefix here
   }
 }

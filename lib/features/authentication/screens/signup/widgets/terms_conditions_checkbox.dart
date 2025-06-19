@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:safe_safai_shop/features/authentication/controllers/signup/signup_controller.dart';
 import 'package:safe_safai_shop/utils/constants/colors.dart';
 import 'package:safe_safai_shop/utils/constants/sizes.dart';
 import 'package:safe_safai_shop/utils/constants/text_strings.dart';
@@ -12,13 +14,14 @@ class SafeSafaiTermsAndConditionCheckBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = SignupController.instance;
     final dark = SafeSafaiHelperFunctions.isDarkMode(context);
     return Row(
       children: [
         SizedBox(
             width: 24,
             height: 24,
-            child: Checkbox(value: true, onChanged: (value) {})),
+            child: Obx( () => Checkbox(value: controller.privacyPolicy.value, onChanged: (value) => controller.privacyPolicy.value = !controller.privacyPolicy.value))),
         const SizedBox(
           width: SafeSafaiSizes.spaceBtwItems,
         ),
