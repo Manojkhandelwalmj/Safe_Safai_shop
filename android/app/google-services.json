@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "578876174093",
+    "project_id": "safe-safai-shop-app",
+    "storage_bucket": "safe-safai-shop-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578876174093:android:17d181c59334ba12638a44",
+        "android_client_info": {
+          "package_name": "com.example.safe_safai_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578876174093-j2s2bt22gte8pi47oum9fhh88u5as165.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.safe_safai_shop",
+            "certificate_hash": "53d9d07ea588447c6a76dd96b5b240d7fc1360c1"
+          }
+        },
+        {
+          "client_id": "578876174093-ekqka0lus4874pi3d4oead03kik3c07m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiqqww1dAf9uFsS4QK4_tFPYZ2KA0Z7kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578876174093-ekqka0lus4874pi3d4oead03kik3c07m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "578876174093-l0qr4of3lhrmafpb3634kbsojftkdftv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.safeSafaiShop"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

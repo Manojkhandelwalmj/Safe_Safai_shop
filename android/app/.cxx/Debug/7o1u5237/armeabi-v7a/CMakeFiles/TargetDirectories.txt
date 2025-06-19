@@ -1,0 +1,2 @@
+C:/Users/manoj/StudioProjects/Safe_Safai_Shop/android/app/.cxx/Debug/7o1u5237/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/manoj/StudioProjects/Safe_Safai_Shop/android/app/.cxx/Debug/7o1u5237/armeabi-v7a/CMakeFiles/rebuild_cache.dir
