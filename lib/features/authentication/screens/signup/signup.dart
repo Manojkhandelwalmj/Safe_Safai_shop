@@ -31,7 +31,7 @@ class SignupScreen extends StatelessWidget {
               ),
 
               /// Form
-              SafeSafaiSignupForm(),
+              const SafeSafaiSignupForm(),
               const SizedBox(height: SafeSafaiSizes.spaceBtwSections,),
               /// Divider
               SafeSafaiFormDivider(dividerText: SafeSafaiTexts.orSignUpWith.capitalize!),

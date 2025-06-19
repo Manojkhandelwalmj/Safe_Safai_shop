@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:safe_safai_shop/features/authentication/controllers.onboarding/onboarding_controllers.dart';
+import 'package:safe_safai_shop/features/authentication/controllers/onboarding/onboarding_controllers.dart';
 import 'package:safe_safai_shop/utils/constants/colors.dart';
 import 'package:safe_safai_shop/utils/constants/sizes.dart';
 import 'package:safe_safai_shop/utils/device/device_utility.dart';
