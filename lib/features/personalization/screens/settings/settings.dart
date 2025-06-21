@@ -5,6 +5,7 @@ import 'package:safe_safai_shop/common/widgets/custom_shapes/containers/primary_
 import 'package:safe_safai_shop/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:safe_safai_shop/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:safe_safai_shop/common/widgets/texts/section_heading.dart';
+import 'package:safe_safai_shop/data/repositories/authentication/authentication_repository.dart';
 import 'package:safe_safai_shop/features/personalization/screens/address/address.dart';
 import 'package:safe_safai_shop/features/personalization/screens/profile/profile.dart';
 import 'package:safe_safai_shop/features/shop/screens/order/order.dart';
@@ -147,7 +148,7 @@ class SettingsScreen extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child:
-                        OutlinedButton(onPressed: () {}, child: Text('Logout')),
+                        OutlinedButton(onPressed: () => AuthenticationRepository.instance.logout(), child: Text('Logout')),
                   ),
                   const SizedBox(
                     height: SafeSafaiSizes.spaceBtwSections * 2.5,

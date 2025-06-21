@@ -15,8 +15,7 @@ class SafeSafaiImages{
   // -- animations
   static const String sendEmailAnimation = "assets/images/animations/sendEmail.gif";
   static const String confirmAnimation = "assets/images/animations/confirmed.gif";
-  static const String docerAnimation = "assets/images/animations/processing_new_style.gif";
-
+  static const String docerAnimation = "assets/images/animations/page_drop_animation.json";
   // -- category icons
   static const String sportIcon = "assets/icons/categories/sport_icon.png";
   static const String clothIcon = "assets/icons/categories/cloths_icon.png";

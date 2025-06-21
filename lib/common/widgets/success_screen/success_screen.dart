@@ -4,8 +4,8 @@ import 'package:safe_safai_shop/utils/constants/sizes.dart';
 import 'package:safe_safai_shop/utils/constants/text_strings.dart';
 import 'package:safe_safai_shop/utils/helpers/helper_functions.dart';
 
-class SucessScreen extends StatelessWidget {
-  const SucessScreen({super.key, required this.image, required this.title, required this.subtitle, required this.onPressed});
+class SuccessScreen extends StatelessWidget {
+  const SuccessScreen({super.key, required this.image, required this.title, required this.subtitle, required this.onPressed});
   final String image,title, subtitle;
   final VoidCallback onPressed;
 

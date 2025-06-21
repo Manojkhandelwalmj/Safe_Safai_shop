@@ -10,7 +10,7 @@ class App extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return GetMaterialApp(
-      debugShowMaterialGrid: false,
+      debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
       theme: SafeSafaiAppTheme.lightTheme,
       darkTheme: SafeSafaiAppTheme.darkTehme,

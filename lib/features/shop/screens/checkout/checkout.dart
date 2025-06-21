@@ -3,7 +3,7 @@ import 'package:safe_safai_shop/common/widgets/appbar/appbar.dart';
 import 'package:safe_safai_shop/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:safe_safai_shop/common/widgets/products/cart/coupon_widget.dart';
 import 'package:get/get.dart';
-import 'package:safe_safai_shop/common/widgets/sucess_screen/sucess_screen.dart';
+import 'package:safe_safai_shop/common/widgets/success_screen/success_screen.dart';
 import 'package:safe_safai_shop/features/shop/screens/cart/widgets/cart_items.dart';
 import 'package:safe_safai_shop/features/shop/screens/checkout/widgets/billing_address_section.dart';
 import 'package:safe_safai_shop/features/shop/screens/checkout/widgets/billing_amount_section.dart';
@@ -83,7 +83,7 @@ class CheckoutScreen extends StatelessWidget {
       bottomNavigationBar: Padding(
         padding: EdgeInsets.all(SafeSafaiSizes.defaultSpace),
         child: ElevatedButton(
-            onPressed: () => Get.to(() => SucessScreen(
+            onPressed: () => Get.to(() => SuccessScreen(
                 image: SafeSafaiImages.confirmAnimation,
                 title: 'Payment Successful',
                 subtitle: 'Your Item will be shipped soon!',

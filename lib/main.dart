@@ -11,11 +11,15 @@ import 'firebase_options.dart';
 Future<void> main() async {
   /// Widget Binding
   final WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+
   /// -- GetX Local Storage
   await GetStorage.init();
+
   // Todos: Init Payment Methods
+
   /// -- Await Native Splace until items load
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+
   /// -- Initialize Firebase & Authentication Repository
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
